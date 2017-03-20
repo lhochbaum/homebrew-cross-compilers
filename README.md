@@ -1,2 +1,2 @@
 # homebrew-cross-compilers
-Cross Compier formulas fro Homebrew
+Cross Compier formulas for Homebrew
