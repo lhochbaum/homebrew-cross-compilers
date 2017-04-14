@@ -16,8 +16,8 @@ class I686ElfGdb < Formula
     ]
 
     mkdir "build" do
-      ENV.prepend_path("PATH", Formula["binutils-i686-elf"].opt_bin)
-      ENV.prepend_path("PATH", Formula["gcc-i686-elf"].opt_bin)
+      ENV.prepend_path("PATH", Formula["i686-elf-binutils"].opt_bin)
+      ENV.prepend_path("PATH", Formula["i686-elf-gcc"].opt_bin)
 
       system "../configure", *args
 
