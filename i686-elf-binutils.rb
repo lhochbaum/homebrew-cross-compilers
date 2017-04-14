@@ -1,4 +1,4 @@
-class BinutilsI686Elf < Formula
+class I686ElfBinutils < Formula
   desc "Binutils for i686-elf target"
   homepage "https://www.gnu.org/software/binutils/"
   url "https://ftpmirror.gnu.org/binutils/binutils-2.28.tar.bz2"

@@ -1,4 +1,4 @@
-class GccI686Elf < Formula
+class I686ElfGcc < Formula
   desc "GNU Compiler Collection for i686-elf target"
   homepage "https://www.gnu.org/software/gcc/gcc.html"
   url "https://ftpmirror.gnu.org/gcc/gcc-6.3.0/gcc-6.3.0.tar.bz2"
@@ -10,7 +10,7 @@ class GccI686Elf < Formula
   depends_on "libmpc"
   depends_on "mpfr"
   depends_on "isl"
-  depends_on "binutils-i686-elf"
+  depends_on "i686-elf-binutils"
 
   def install
     # The C compiler is always built, C++ can be disabled
