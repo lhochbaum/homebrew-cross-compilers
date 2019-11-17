@@ -3,6 +3,7 @@ class X8664ElfGrub < Formula
   homepage "https://www.gnu.org/software/grub/"
   head "git://git.savannah.gnu.org/grub.git"
 
+  depends_on "gettext"
   depends_on "autoconf"
   depends_on "automake"
   depends_on "objconv"
@@ -21,6 +22,7 @@ class X8664ElfGrub < Formula
       "--target=x86_64-elf",
     ]
     
+    system "./bootstrap"
     system "./autogen.sh"
     mkdir "build" do
       system "../configure", *args
